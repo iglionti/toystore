@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  reconnect: false
+  database: toystore_development
+  pool: 180
+  username: root
+  password: rootpass
+  host: localhost
+  encoding: utf8
+  min_messages: WARNING
+
+test: &test
+  adapter: postgresql
+  reconnect: false
+  database: toystore_test
+  pool: 5
+  username: root
+  password: rootpass
+  host: localhost
+  encoding: utf8
+  min_messages: WARNING
